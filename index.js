@@ -32,7 +32,8 @@ module.exports = (function() {
     };
 
     var __getFunctionName = function(trace, traceDepth) {
-        var funcName = trace[traceDepth].getMethodName() || trace[traceDepth].getFunctionName();
+        // var funcName = trace[traceDepth].getMethodName() || trace[traceDepth].getFunctionName();
+        var funcName = trace[traceDepth].getFunctionName();
         if (funcName) {
             funcName = funcName.split(".");
             funcName = funcName[funcName.length - 1];
@@ -81,7 +82,7 @@ module.exports = (function() {
     var init = function(configure) {
         configure = (oc.getType(configure) === "object") ? configure : {};
         defaultConfigure.svcName = (oc.getType(configure.svcName) === "string") ? configure.svcName : defaultConfigure.svcName;
-        defaultConfigure.traceDepth = (oc.getType(configure.traceDepth) === "number") ? configure.traceDepth + 1 : defaultConfigure.traceDepth;
+        defaultConfigure.traceDepth = (oc.getType(configure.traceDepth) === "number") ? configure.traceDepth + 1 : 1;
         defaultConfigure.level = (oc.getType(configure.level) === "string") ? configure.level : defaultConfigure.level;
     };
 
