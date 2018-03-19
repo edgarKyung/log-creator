@@ -1,0 +1,28 @@
+{
+  "name": "log-creator",
+  "version": "0.2.1",
+  "description": "Create object for Log",
+  "main": "index.js",
+  "dependencies": {
+    "object-controller": "^1.0.0",
+    "stack-trace": "0.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node _sample/functionTest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgarKyung/log-creator.git"
+  },
+  "keywords": [
+    "log",
+    "logger"
+  ],
+  "author": "nhyun.kyung <edgar.kyung@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edgarKyung/log-creator/issues"
+  },
+  "homepage": "https://github.com/edgarKyung/log-creator#readme"
+}
